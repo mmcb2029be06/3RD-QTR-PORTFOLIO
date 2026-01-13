@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hello, World!</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+      <form id="dForm" action="submit" method="post">
+        <fieldset>
+          <label>
+            "StudentID"
+            <input type="number" name="studentid" id="studentid" required>
+          </label>
+          </br>
+          <label>
+            "Full Name"
+            <input type="text" name="fullname" id="fullname" required>
+          </label>
+          </br>
+          <label>
+            "Birthday"
+            <input type="date" name="birthday" id="birthday" required>
+          </label>
+          </br>
+          <label>
+            "Email Address"
+            <input type="email" name="email" id="email" required>
+          </label>
+          </br>
+        </fieldset>
+        <fieldset>
+          <label>
+            "Mobile Phone"
+            <input type="text" name="mphone" id="mphone" required>
+          </label>
+          </br>
+          <label>
+            "Grade Level"
+            <select id="gradelevel" name="gradelevel">
+                <option value="seven">7</option>
+                <option value="eight">8</option>
+                <option value="nine">9</option>
+                <option value="ten">10</option>
+                <option value="eleven">11</option>
+                <option value="twelve">12</option>
+          </label>
+          </br>
+          <label>
+            "Intern/Extern"
+            <input type="radio" name="ioe" value="intern">
+            "Intern"
+            <input type="radio" name="ioe" value="extern">
+            "Extern"
+          </label>
+          </br>
+          <label>
+            "Preferred Organization / Club"
+            <select id="gradelevel" name="gradelevel">
+                <option value="seven">SCA</option>
+                <option value="eight">Lagablab</option>
+                <option value="nine">MTP</option>
+                <option value="ten">Flux</option>
+                <option value="eleven">Aksis</option>
+                <option value="twelve">Bake Club</option>
+          </label>
+          </br>
+        </fieldset>
+        <fieldset>
+          <label>
+            "Why do you want to join?"
+            <input type="textarea" name="why" id="why" required>
+          </label>
+          </br>
+          <button type="submit" onclick="alert("submit!")"> Submit </button>
+          <input type="reset" value="Clear">
+        </fieldset>
+      </form>
+  </body>
+</html>
